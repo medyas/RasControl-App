@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/ip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="205dp"
+        android:layout_marginStart="205dp"
+        android:text="@string/ip_address"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold|italic"
+        tools:ignore="RtlHardcoded"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/toolbar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/ipaddress"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ip"
+        android:layout_alignStart="@+id/ip"
+        android:layout_below="@+id/ip"
+        android:layout_marginTop="48dp"
+        android:digits="0123456789."
+        android:ems="10"
+        android:hint="@string/_192_168_1_1"
+        android:inputType="text"
+        android:text="@string/_192_168_1"
+        android:textColor="@color/colorAccent" />
+
+    <TextView
+        android:id="@+id/port"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/ipaddress"
+        android:layout_alignBottom="@+id/ipaddress"
+        android:layout_marginLeft="46dp"
+        android:layout_marginStart="46dp"
+        android:layout_toEndOf="@+id/ipaddress"
+        android:layout_toRightOf="@+id/ipaddress"
+        android:ems="10"
+        android:text="@string/_9999"
+        android:textColor="@color/colorAccent" />
+
+    <Button
+        android:id="@+id/connect"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:onClick="redirect"
+        android:text="@string/connect"
+        android:textColor="@android:color/background_light"
+        android:textStyle="bold"
+        android:layout_marginRight="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_below="@+id/ipaddress"
+        android:layout_toLeftOf="@+id/reset"
+        android:layout_toStartOf="@+id/reset"
+        android:layout_marginTop="41dp" />
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/connect"
+        android:layout_toEndOf="@+id/ipaddress"
+        android:layout_toRightOf="@+id/ipaddress"
+        android:textColor="@android:color/background_light"
+        android:onClick="resetFields"
+        android:background="@color/colorPrimary"
+        android:textStyle="bold"
+        android:text="@string/reset" />
+
+    <TextView
+        android:id="@+id/p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/port"
+        android:layout_alignStart="@+id/port"
+        android:text="@string/port"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold|italic"
+        android:layout_alignTop="@+id/ip" />
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ipaddress"
+        android:layout_alignStart="@+id/ipaddress"
+        android:layout_below="@+id/connect"
+        app:srcCompat="@drawable/isetr_logo" />
+
+
+</RelativeLayout>

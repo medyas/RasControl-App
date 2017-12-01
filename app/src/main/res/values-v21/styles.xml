@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AboutTheme" parent="android:Theme.DeviceDefault.Dialog">
+        <item name="android:colorPrimaryDark">#006b8e</item>
+        <item name="android:colorAccent">#ff4081</item>
+        <item name="android:colorPrimary">#E0E0E0</item>
+        <item name="android:colorBackground">@color/primary_material_light</item>
+        <item name="android:textColorPrimary">#006b8e</item>
+        <item name="android:textColorPrimaryInverse">#0099cc</item>
+        <item name="android:colorForeground">#BDBDBD</item>
+        <item name="android:windowBackground">?android:attr/colorBackground</item>
+    </style>
+
+    <style name="AppThemev2" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:colorBackground">#eeeeee</item>
+        <item name="android:textColorPrimary">#C2185B</item>
+        <item name="android:textColorPrimaryInverse">#0099cc</item>
+        <item name="android:colorForeground">#0099cc</item>
+        <item name="colorAccent">#ff4081</item>
+        <item name="android:windowBackground">@color/primary_material_light</item>
+        <item name="colorPrimary">@color/background_material</item>
+        <item name="android:statusBarColor">@color/colorPrimaryDark</item>
+    </style>
+</resources>

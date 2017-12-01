@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/ip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="37dp"
+        android:text="Ip Address :"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold|italic"
+        android:layout_below="@+id/toolbar"
+        android:layout_alignLeft="@+id/imageView"
+        android:layout_alignStart="@+id/imageView"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp" />
+
+    <EditText
+        android:id="@+id/ipaddress"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ip"
+        android:layout_alignStart="@+id/ip"
+        android:layout_below="@+id/ip"
+        android:layout_marginTop="48dp"
+        android:digits="0123456789."
+        android:ems="10"
+        android:hint="192.168.1.1"
+        android:inputType="text"
+        android:text="192.168.1."
+        android:textColor="@color/colorAccent" />
+
+    <TextView
+        android:id="@+id/port"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:text="9999"
+        android:textColor="@color/colorAccent"
+        android:layout_alignBaseline="@+id/ipaddress"
+        android:layout_alignBottom="@+id/ipaddress"
+        android:layout_alignLeft="@+id/p"
+        android:layout_alignStart="@+id/p" />
+
+    <Button
+        android:id="@+id/connect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ipaddress"
+        android:layout_alignStart="@+id/ipaddress"
+        android:layout_below="@+id/ipaddress"
+        android:layout_marginLeft="35dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="130dp"
+        android:background="@color/colorPrimary"
+        android:onClick="redirect"
+        android:text="Connect"
+        android:textColor="@android:color/background_light"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/connect"
+        android:layout_toEndOf="@+id/ipaddress"
+        android:layout_toRightOf="@+id/ipaddress"
+        android:background="@color/colorPrimary"
+        android:onClick="resetFileds"
+        android:text="Reset"
+        android:textColor="@android:color/background_light"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Port :"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold|italic"
+        android:layout_above="@+id/ipaddress"
+        android:layout_toRightOf="@+id/reset"
+        android:layout_toEndOf="@+id/reset" />
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="73dp"
+        app:srcCompat="@drawable/isetr_logo" />
+
+
+</RelativeLayout>

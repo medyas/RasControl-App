@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="settings" type="id">settings</item>
+    <item name="about" type="id">about</item>
+    <item name="reset" type="id">reset</item>
+    <item name="connect" type="id">connect</item>
+    <item name="ipaddress" type="id">ipaddress</item>
+    <item name="port" type="id">port</item>
+    <item name="startstop" type="id" />
+    <item name="automan" type="id" />
+</resources>

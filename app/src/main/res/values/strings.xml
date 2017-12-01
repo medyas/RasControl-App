@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">RasControl</string>
+    <string name="Settings">Settings</string>
+    <string name="About">About</string>
+    <string name="aboutApp">\nThis App made for Iset Rades mini project, And it controls a Raspberry Pi robot using wifi.\nYou will need at least 15% of speed for the DC motor to start working.\n</string>
+    <string name="made">&#169; 2017 Medyas\n\n</string>
+    <string name="connect">Connect</string>
+    <string name="ip_address">Ip Address :</string>
+    <string name="port">Port :</string>
+    <string name="reset">Reset</string>
+    <string name="start">Start</string>
+    <string name="stop">Stop</string>
+    <string name="auto">Auto</string>
+    <string name="angle">Angle</string>
+    <string name="speed">Speed</string>
+    <string name="_192_168_1">192.168.1.</string>
+    <string name="_192_168_1_1">192.168.1.1</string>
+    <string name="_9999">9999</string>
+    <string name="man">Man</string>
+    <string name="iset_rades_logo">Iset Rades Logo</string>
+</resources>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sabri.com.mini_project">
+
+    <uses-permission android:name="android.permission.INTERNET" >
+    </uses-permission>
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" >
+    </uses-permission>
+
+     <uses-sdk android:minSdkVersion="16"
+        android:targetSdkVersion="23"
+        android:maxSdkVersion="26" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/raspberry"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/raspberry"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".SettingsActivity"
+            android:label="@string/Settings"
+            android:theme="@style/AppThemev2">
+        </activity>
+
+        <activity
+            android:name=".AboutActivity"
+            android:label="@string/About"
+            android:theme="@style/AboutTheme" >
+        </activity>
+
+        <service
+            android:name=".Notification">
+        </service>
+
+    </application>
+
+</manifest>
+
