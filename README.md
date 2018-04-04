@@ -3,4 +3,4 @@
 
 The app will connect to a socket server in the RPI and send data based on the movement of the joystick, which will be recieved by the server written in python and it will allow the control of the servo and DC motor. 
 
-![Screenshot](android app.PNG)
+![Alt text](android app.PNG)
